@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function validatename()
+    {
+    var mob=document.getElementById("btn").value
+    var reg=/^[a-z A-Z]\w{3,10}$/
+
+    if(mob.match(reg)==null)
+    {
+    alert("invalid name")
+    }
+    else {
+    alert("valid name ")
+    }
+    }
+
+
+</script>
+<div>
+    <center>
+        Name:<input type="text" id="btn"><br>
+        Email:<input type="email" id="btnemail" >
+        <input type="submit" id="btnsub" value="Validate Name " onclick="validatename()">
+    </center>
+</div>
+</body>
+</html>
